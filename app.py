@@ -40,7 +40,7 @@ def manual_trigger():
     return {"status": "poll_sent", "response": result}
 
 
-@app.route("/poll", methods=["POST"])
+@app.route("/poll", methods=["GET"])
 def poll_webhook():
     data = request.json
 
